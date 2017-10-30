@@ -19,4 +19,8 @@ ggplot(data = size_data, aes(x= F_mass)) +
   scale_x_log10() +
   geom_histogram(fill = "blue") 
 
-
+ggplot(data = size_data, aes(x= F_mass)) +
+  labs(x = "female Mass(g) vs male Mass (g)") +
+  scale_x_log10() +
+  geom_histogram(fill = "blue") +
+ geom_histogram(aes(x = M_mass, alpha = 0.3))
