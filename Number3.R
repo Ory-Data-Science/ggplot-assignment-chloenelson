@@ -14,5 +14,7 @@ dat <- read.csv(url("http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistori
                 sep = "\t", nrows = 1440, na.strings = c("-999.00", "999.00"))
 
 ggplot(data = dat, aes(x = mass.g., y = newborn.g.)) + geom_point() +
-  labs(x = "mass.g.", y = "newborn.g.")
+  labs(x = "mass.g.", y = "newborn.g.") +
+  scale_x_log10() +
+  scale_y_log10()
        
