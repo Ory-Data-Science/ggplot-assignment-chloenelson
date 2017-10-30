@@ -13,3 +13,10 @@ ggplot(data = size_data, aes(x= F_mass)) +
   geom_histogram()
  
 ?hist
+
+ggplot(data = size_data, aes(x= F_mass)) +
+  labs(x = "female Mass(g)") +
+  scale_x_log10() +
+  geom_histogram(fill = "blue") 
+
+
