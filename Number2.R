@@ -13,3 +13,4 @@ size_mr_data <- data.frame(
     106.670, 119.660, 104.150, 33.165, 4.900, 4.865))
     
 #code goes here
+ggplot(data = size_mr_data, aes (x = body_mass, y = metabolic_rate)) + geom_line()
