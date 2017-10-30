@@ -16,4 +16,9 @@ size_mr_data <- data.frame(
 ggplot(data = size_mr_data, aes (x = body_mass, y = metabolic_rate)) + geom_line()
 ?log
 ggplot(data = size_mr_data, aes(x = log10(body_mass), y = log10(metabolic_rate))) + geom_line()
-       
+
+?points
+?scale
+?log
+ggplot(data = size_mr_data, aes (x = body_mass, y = metabolic_rate , size =5)) + geom_line()
+ggplot(data = size_mr_data, aes (x = body_mass, y = metabolic_rate)) + geom_line(size = 5) + scale_x_log10() + scale_y_log10()
