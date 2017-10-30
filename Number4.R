@@ -5,4 +5,11 @@ library(tidyverse)
 dat <- read.csv(url("http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt"),
                 sep = "\t", na.strings = c("-999.00", "999.00", "-999", "999"))
 
-#your code goes here
+#your code goes here <- 
+size_data <- read.csv("data_2.txt", header = TRUE, sep = "\t")
+
+ggplot(data = size_data, aes(x= F_mass)) +
+  labs(x = "female Mass(g)") +
+  geom_histogram()
+ 
+?hist
