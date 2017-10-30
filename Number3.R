@@ -30,3 +30,9 @@ ggplot(data = dat, aes(x = mass.g., y = newborn.g., color = order)) + geom_point
   scale_x_log10() +
   scale_y_log10() +
   facet_wrap(~order)
+
+ggplot(data = dat, aes(x = mass.g., y = newborn.g., color = order)) + 
+  labs(x = "mass.g.", y = "newborn.g.") +
+  scale_x_log10() +
+  scale_y_log10() +
+  facet_wrap(~order) + geom_smooth(method = "lm")
