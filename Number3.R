@@ -18,3 +18,9 @@ ggplot(data = dat, aes(x = mass.g., y = newborn.g.)) + geom_point() +
   scale_x_log10() +
   scale_y_log10()
        
+?color
+
+ggplot(data = dat, aes(x = mass.g., y = newborn.g., color = order)) + geom_point() +
+  labs(x = "mass.g.", y = "newborn.g.") +
+  scale_x_log10() +
+  scale_y_log10() 
